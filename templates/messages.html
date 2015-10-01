@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../static/form.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../static/printstyles.css" media="print"/>
+  <title>Message Sent!</title>
+</head>
+<body style="background-color:#E6E6DC">
+  <div id="form" class="test">
+
+    <center><h1>Surya's Twilio App</h1></center>
+
+    <center><h2>Message Sent!</h2></center>
+    <center><strong>Replies:</strong></center>
+    <ol>
+     {% for m in messages %}
+    <li>"{{m.body}}" <br /></li>
+    {% endfor %}
+    </ol>
+
+  </div>
+</body>
+</html>
+
