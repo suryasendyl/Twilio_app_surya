@@ -4,15 +4,15 @@ from flask import request, redirect
 
 # Twilio API
 from twilio.rest import TwilioRestClient
-ACCOUNT_SID = 'AC9629dc758c9d995440c7b90b5542d86c'
-AUTH_TOKEN =  'b13ff78cc4235ddbabcf41decd4269ee'
+ACCOUNT_SID = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+AUTH_TOKEN =  'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 # Flask app
 app = Flask(__name__)
 client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
 # Twilio number
-twilio_number = "+17797747983" 
+twilio_number = "+1XXXXXXXXXXXXX" 
 
 # App exectution 
 @app.route("/") 
